@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인적사항입력</title>
+    <script src = "../js/function.js"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form>
+                <fieldset>
+                    <legend>인적사항</legend>
+                    이름<br>
+                    <input type="text" id="username" placeholder="이름을 입력해주세요."><br>
+                    이메일<br>
+                    <input type="text" id="email" placeholder="이메일을 입력해주세요."><br>
+                    전화번호<br>
+                    <input type="text" id="number" placeholder="전화번호를 입력해주세요."><br>
+                    프로필사진<br>
+                    <input type="file" id="imgInput" accept="image/*" onchange="setProfile(event)">
+                    <img id="img" src="#" alt="사진을 가져올 수 없습니다."/>
+                </fieldset>
+            </form>
+            <button onclick="save()">저장하기</button>
+        </div>
+    </div>
+</body>
+</html>
